@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Test" verbose="5">
+	<listeners>
+		<listener
+			class-name="com.automation.listeners.ExtentReportListener" />
+	<listener
+			class-name="com.automation.listeners.AllureListener" />
+			</listeners>
+	<test name="Portal Login">
+	<parameter name ="username"  value = "4044066233a"  />
+	<parameter name ="password"  value = "Unix@1234"  />
+	<parameter name ="browser"  value = "Chrome"  />
+		<classes>
+			<class name="com.automation.test.portal.PortalLoginTest" />
+		</classes>
+	</test>
+	<test name="Portal Payment">
+	<parameter name ="username"  value = "4044066233a"  />
+	<parameter name ="password"  value = "Unix@1234"  />
+	<parameter name ="browser"  value = "Chrome"  />
+		<classes>
+			<class name="com.automation.test.portal.PortalPaymentTest" />
+		</classes>
+	</test>
+
+</suite>
