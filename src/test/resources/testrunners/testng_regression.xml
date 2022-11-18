@@ -13,7 +13,7 @@
 	<parameter name ="password"  value = "Unix@1234"  />
 	<parameter name ="browser"  value = "Chrome"  />
 		<classes>
-			<class name="com.automation.test.portal.PortalLoginTest" />
+			<class name="com.automation.test.portal.PortalHomePageTest" />
 		</classes>
 	</test>
 	<test name="Portal Payment">

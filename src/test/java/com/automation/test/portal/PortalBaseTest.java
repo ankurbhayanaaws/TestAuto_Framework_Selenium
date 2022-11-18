@@ -8,6 +8,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
+import com.automation.portal.PortalHomePage;
 import com.automation.portal.PortalLoginPage;
 import com.automation.portal.PortalPaymentPage;
 import com.automation.utils.DriverFactory;
@@ -17,6 +18,7 @@ public class PortalBaseTest {
 	WebDriver driver;
 	PortalLoginPage pl;
 	PortalPaymentPage portalPayPage;
+	PortalHomePage  homepage;
 	 
 	@BeforeMethod
 	public void testSetup() {
@@ -25,7 +27,8 @@ public class PortalBaseTest {
 		DriverFactory df = new DriverFactory();
 		prop= df.initProperties();
 		driver =df.initDriver(prop);
-         pl = new PortalLoginPage(driver);
+     //    pl = new PortalLoginPage(driver);
+		  homepage = new PortalHomePage(driver);
 		
 		
 	}

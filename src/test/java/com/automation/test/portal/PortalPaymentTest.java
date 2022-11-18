@@ -22,6 +22,7 @@ public class PortalPaymentTest extends PortalBaseTest{
 	@Description ("Portal Make Payment Test")
 	@Test(dataProvider = "getPortalData")
 	public void doPortalPaymentTest (String username,String password) {
+		
 		portalPayPage= pl.doLogin(username, password);
 		portalPayPage.doPayment();
 					
