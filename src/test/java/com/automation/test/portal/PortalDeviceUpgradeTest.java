@@ -2,11 +2,7 @@ package com.automation.test.portal;
 
 import org.testng.annotations.Test;
 
-import com.automation.portal.PortalHomePage;
-
-public class PortalHomePageTest extends PortalBaseTest {
-	
-	
+public class PortalDeviceUpgradeTest extends PortalBaseTest{
 	
 	@Test
 	public void doHomePageTest() {
@@ -47,8 +43,5 @@ public class PortalHomePageTest extends PortalBaseTest {
 		}
 	
 	}
-	
-
-	
 
 }
