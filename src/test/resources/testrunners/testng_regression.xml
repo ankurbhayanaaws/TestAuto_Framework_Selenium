@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Regression Test" verbose="5" thread-count="5">
+<suite name="Portal Regression Test" verbose="5" parallel = "tests" thread-count="4">
 	<listeners>
 		<listener
 			class-name="com.automation.listeners.ExtentReportListener" />
 	<listener
 			class-name="com.automation.listeners.AllureListener" />
 			</listeners>
-	<test name="Portal Login">
+	<test name="Portal Shop Test">
 	<parameter name ="username"  value = "4044066233a"  />
 	<parameter name ="password"  value = "Unix@1234"  />
 	<parameter name ="browser"  value = "Chrome"  />
@@ -21,7 +21,31 @@
 	<parameter name ="password"  value = "Unix@1234"  />
 	<parameter name ="browser"  value = "Chrome"  />
 		<classes>
-			<class name="com.automation.test.portal.PortalPaymentTest" />
+			<class name="com.automation.test.portal.PortalHomePageTest" />
+		</classes>
+	</test>
+	<test name="Portal Device Upgrade">
+	<parameter name ="username"  value = "4044066233a"  />
+	<parameter name ="password"  value = "Unix@1234"  />
+	<parameter name ="browser"  value = "Chrome"  />
+		<classes>
+			<class name="com.automation.test.portal.PortalHomePageTest" />
+		</classes>
+	</test>
+	<test name="Portal Change Price Plan">
+	<parameter name ="username"  value = "4044066233a"  />
+	<parameter name ="password"  value = "Unix@1234"  />
+	<parameter name ="browser"  value = "Chrome"  />
+		<classes>
+			<class name="com.automation.test.portal.PortalHomePageTest" />
+		</classes>
+	</test>
+	<test name="Portal Enroll BridgePay">
+	<parameter name ="username"  value = "4044066233a"  />
+	<parameter name ="password"  value = "Unix@1234"  />
+	<parameter name ="browser"  value = "Chrome"  />
+		<classes>
+			<class name="com.automation.test.portal.PortalHomePageTest" />
 		</classes>
 	</test>
 
