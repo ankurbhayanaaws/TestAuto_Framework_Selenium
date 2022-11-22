@@ -27,7 +27,8 @@
 	<test name="Portal Device Upgrade">
 	<parameter name ="username"  value = "4044066233a"  />
 	<parameter name ="password"  value = "Unix@1234"  />
-	<parameter name ="browser"  value = "Chrome"  />
+	<parameter name ="browser"  value = "firefox"  />
+	<parameter name ="browserVersion"  value = "83"  />
 		<classes>
 			<class name="com.automation.test.portal.PortalDeviceUpgradeTest" />
 		</classes>
